@@ -189,6 +189,7 @@ The following tables list the configurable parameters of the Jenkins chart and t
 | `controller.prometheus.serviceMonitorAdditionalAnnotations` | Additional annotations to add to the service monitor object | `{}`                       |
 | `controller.prometheus.serviceMonitorNamespace` | Custom namespace for serviceMonitor | Not set (same ns where is Jenkins being deployed) |
 | `controller.prometheus.scrapeInterval` | How often prometheus should scrape metrics | `60s`                              |
+| `controller.prometheus.scrapeTimeout` | Timeout after which the scrape is ended | `""`                                |
 | `controller.prometheus.scrapeEndpoint` | The endpoint prometheus should get metrics from | `/prometheus`                 |
 | `controller.prometheus.alertingrules` | Array of prometheus alerting rules | `[]`                                        |
 | `controller.prometheus.alertingRulesAdditionalLabels` | Additional labels to add to the prometheus rule object     | `{}`                                   |

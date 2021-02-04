@@ -417,6 +417,8 @@ controller:
     # Set a custom namespace where to deploy ServiceMonitor resource
     # serviceMonitorNamespace: monitoring
     scrapeInterval: 60s
+    # How long until a scrape request times out. If not set, the Prometheus default scape timeout is used
+    scrapeTimeout: ""
     # This is the default endpoint used by the prometheus plugin
     scrapeEndpoint: /prometheus
     # Additional labels to add to the PrometheusRule object

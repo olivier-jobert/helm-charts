@@ -49,6 +49,7 @@ tests:
         prometheus:
           enabled: true
           scrapeInterval: 120s
+          scrapeTimeout: 20s
           scrapeEndpoint: /monitoring
     asserts:
       - equal:
