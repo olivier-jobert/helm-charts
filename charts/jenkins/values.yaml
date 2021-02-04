@@ -412,6 +412,8 @@ controller:
     enabled: false
     # Additional labels to add to the ServiceMonitor object
     serviceMonitorAdditionalLabels: {}
+    # Additional annotations to add to the ServiceMonitor object
+    serviceMonitorAdditionalAnnotations: {}
     # Set a custom namespace where to deploy ServiceMonitor resource
     # serviceMonitorNamespace: monitoring
     scrapeInterval: 60s

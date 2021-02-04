@@ -20,6 +20,12 @@ metadata:
     {{- range $key, $val := .Values.controller.prometheus.serviceMonitorAdditionalLabels }}
     {{ $key }}: {{ $val | quote }}
     {{- end}}
+{{- if .Values.controller.prometheus.serviceMonitorAdditionalAnnotations }}
+  annotations:
+    {{- range $key, $val := .Values.controller.prometheus.serviceMonitorAdditionalAnnotations }}
+    {{ $key }}: {{ $val | quote }}
+    {{- end }}
+{{- end }}
 
 spec:
   endpoints:
