@@ -421,6 +421,10 @@ controller:
     scrapeTimeout: ""
     # This is the default endpoint used by the prometheus plugin
     scrapeEndpoint: /prometheus
+    # An array of prometheus relabel configs
+    # See here: https://prometheus.io/docs/prometheus/latest/configuration/configuration/#relabel_config
+    # The `relabelings` root object is added by default, simply add the relabel config entries
+    relabelConfigs: []
     # Additional labels to add to the PrometheusRule object
     alertingRulesAdditionalLabels: {}
     # An array of prometheus alerting rules

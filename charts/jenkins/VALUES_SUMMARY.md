@@ -191,6 +191,7 @@ The following tables list the configurable parameters of the Jenkins chart and t
 | `controller.prometheus.scrapeInterval` | How often prometheus should scrape metrics | `60s`                              |
 | `controller.prometheus.scrapeTimeout` | Timeout after which the scrape is ended | `""`                                |
 | `controller.prometheus.scrapeEndpoint` | The endpoint prometheus should get metrics from | `/prometheus`                 |
+| `controller.prometheus.relabelConfigs` | Array of prometheus relabel configs | `[]`                                        |
 | `controller.prometheus.alertingrules` | Array of prometheus alerting rules | `[]`                                        |
 | `controller.prometheus.alertingRulesAdditionalLabels` | Additional labels to add to the prometheus rule object     | `{}`                                   |
 | `controller.prometheus.prometheusRuleNamespace` | Custom namespace for PrometheusRule | `""` (same ns where Jenkins being deployed) |
